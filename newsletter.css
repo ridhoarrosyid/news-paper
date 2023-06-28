@@ -29,18 +29,20 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   padding: 40px;
   border-radius: 20px;
 }
 
+.container:first-child img {
+  height: 480px;
+}
+
 .tulisan {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 30px;
+  height: 400px;
 }
 
 h1 {
@@ -63,32 +65,58 @@ ul li {
 
 label {
   display: block;
+  font-weight: bold;
 }
 
 input {
   display: block;
   margin: 10px 0;
-  height: 30px;
-  width: 300px;
-  border: 1px solid;
-  padding: 0;
+  height: 50px;
+  width: 400px;
+  border: solid 1px grey;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-button {
+button:first-of-type {
   display: block;
-  height: 30px;
-  width: 300px;
+  height: 50px;
+  width: 400px;
   margin: 10px 0;
   border: 1px solid;
   padding: 0;
   color: white;
   background-color: hsl(234, 29%, 20%);
+  border-radius: 10px;
+  font-size: 15px;
+  transition: background-color 300ms ease;
+}
+
+button:first-of-type:active {
+  background-color: tomato;
 }
 
 /* style success */
 
-#success {
+body div:nth-child(2) {
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  width: 400px;
+  padding: 50px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+body div:nth-child(2) img {
+  height: 50px;
+  width: 50px;
 }
 
 .attribution {
