@@ -16,4 +16,82 @@
 
 body {
   background-color: hsl(235, 18%, 26%);
+  overflow: hidden;
+}
+
+/* style form */
+
+.container:first-child {
+  width: 800px;
+  height: 450px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.tulisan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+h1 {
+  font-family: roboto-bold;
+  font-size: 50px;
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+ul {
+  margin: 10px;
+  list-style-image: url(/assets/images/icon-list.svg);
+}
+ul li {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  height: 30px;
+  width: 300px;
+  border: 1px solid;
+  padding: 0;
+}
+
+button {
+  display: block;
+  height: 30px;
+  width: 300px;
+  margin: 10px 0;
+  border: 1px solid;
+  padding: 0;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+}
+
+/* style success */
+
+#success {
+  display: none;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
 }
